@@ -2,6 +2,7 @@ var http = require('http')
 var request = require('request')
 
 var server = http.createServer(onRequest).listen(8080)
+console.log("正在监听8080端口。。。")
 
 function onRequest (req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
